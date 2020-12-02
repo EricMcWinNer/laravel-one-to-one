@@ -56,7 +56,7 @@
         $(document).ready(function() {
             let selected = []
             $('.word-select').change(function(e) {
-
+                // VALIDATES CODE TO MAKE SURE THE SAME WORD IS NOT SELECTED TWICE
                 let value = $(this).val();
                 if (selected.indexOf(value) !== -1) {
                     alert(

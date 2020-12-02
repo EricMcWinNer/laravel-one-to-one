@@ -11,6 +11,6 @@ class Word extends Model
 
     // Define the One to One Relationship
     public function match() {
-        return $this->hasOne(Word::class);
+        return $this->hasOne(Match::class);
     }
 }
