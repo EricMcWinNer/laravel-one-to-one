@@ -1,0 +1,30 @@
+.background {
+  background-color: #f7f7f7;
+  min-height: 100vh;
+}
+
+.background .card {
+  background-color: white;
+  border: 1px solid #ededed;
+  border-radius: 3px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+
+.background table {
+  width: 100%;
+}
+
+.background table td {
+  padding: 9px 0;
+}
+
+.background table td:last-child {
+  text-align: right;
+}
+
+.background table tr:nth-child(even) {
+  background: #f7f7f7;
+}
+/*# sourceMappingURL=styles.css.map */

@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\WordMatcher;
+use App\Http\Controllers\WordMatcherView;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,6 +15,6 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [WordMatcherView::class, 'index']);
+
+Route::post('/submit', [WordMatcher::class, 'submit'])->name('submit');
